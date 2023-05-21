@@ -72,13 +72,13 @@ export function Footer() {
     <footer className="bg-secondary py-10">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 text-white lg:gap-8">
         <div className="flex flex-col gap-6 rounded-[10px] bg-primary p-4 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:p-[18px]">
-          <p className="flex flex-col items-center gap-7 text-lg font-medium md:flex-row">
-            <div className="relative inline-block">
+          <p className="flex flex-col items-center gap-7 text-lg font-medium lg:flex-row">
+            <span className="relative inline-block">
               <Briefcase color="white" size={42} />
               <span className="absolute -right-2 -top-1 inline-block h-2 w-2 rounded-full border border-white"></span>
               <span className="absolute -left-2 top-1 inline-block h-[3px] w-[3px] rounded-full bg-white"></span>
               <span className="absolute -bottom-3 left-0 inline-block h-[5px] w-[5px] rounded-full bg-white"></span>
-            </div>
+            </span>
             برای همکاری با برترین ها آماده اید؟
           </p>
           <ButtonLink
@@ -188,7 +188,7 @@ export function Footer() {
                 <CallOutgoing
                   color="white"
                   size={24}
-                  className="group-hover:animate-bounce"
+                  className="shrink-0 group-hover:animate-bounce"
                 />
                 ۰۲۱-۲۳۰۵۱۲۴۰
               </Link>
@@ -201,7 +201,7 @@ export function Footer() {
                 <Sms
                   color="white"
                   size={24}
-                  className="group-hover:animate-bounce"
+                  className="shrink-0 group-hover:animate-bounce"
                 />
                 info@bartarinha.com
               </Link>
@@ -211,7 +211,7 @@ export function Footer() {
                 <Location
                   color="white"
                   size={24}
-                  className="group-hover:animate-bounce"
+                  className="shrink-0 group-hover:animate-bounce"
                 />
                 تهران، خیابان شریعتی ، پایین تر از میرداماد، بن بست هدیه، پلاک
                 ۱۴ طبقه همکف
