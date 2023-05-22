@@ -20,7 +20,12 @@ module.exports = {
         300: '#A9A9A9',
       },
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'post-item-layer':
+          'linear-gradient(180deg, rgba(39, 163, 203, 0) 0%, rgba(39, 163, 203, 0.8) 100%)',
+      },
+    },
   },
   plugins: [],
 }

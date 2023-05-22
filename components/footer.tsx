@@ -69,7 +69,7 @@ export function Footer() {
   ]
 
   return (
-    <footer className="bg-secondary py-10">
+    <footer className="mt-12 bg-secondary py-10 lg:mt-24">
       <div className="mx-auto flex max-w-6xl flex-col gap-6 px-4 text-white lg:gap-8">
         <div className="flex flex-col gap-6 rounded-[10px] bg-primary p-4 lg:flex-row lg:items-center lg:justify-between lg:gap-8 lg:p-[18px]">
           <p className="flex flex-col items-center gap-7 text-lg font-medium lg:flex-row">
