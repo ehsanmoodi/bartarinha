@@ -30,7 +30,7 @@ module.exports = {
       },
       boxShadow: {
         'cat-item': '32px 32px 50px rgba(39, 163, 203, 0.14)',
-        'ad-item': '0px 34px 50px rgba(0, 0, 0, 0.07)',
+        item: '0px 34px 50px rgba(0, 0, 0, 0.07)',
       },
     },
   },

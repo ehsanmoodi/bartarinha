@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 export function AdItem() {
   return (
-    <article className="group rounded-2xl border border-neutral-200 border-opacity-80 bg-white p-4 transition-all hover:border-opacity-60 hover:shadow-ad-item lg:p-5">
+    <article className="group rounded-2xl border border-neutral-200 border-opacity-80 bg-white p-4 transition-all hover:border-opacity-60 hover:shadow-item lg:p-5">
       <div className="relative h-48 overflow-hidden rounded-xl ">
         <Image
           src="https://picsum.photos/200/300?random=1"
