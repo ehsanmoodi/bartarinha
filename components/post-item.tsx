@@ -19,7 +19,7 @@ export function PostItem({ image, title, date, slug }: PostItemProps) {
           fill
           className="h-full w-full rounded-[inherit] object-cover object-center"
         />
-        <div className="absolute -bottom-52 left-0 h-full w-full rounded-[inherit] bg-post-item-layer transition-all duration-300 group-hover:bottom-0"></div>
+        <div className="absolute -bottom-52 left-0 h-full w-full rounded-[inherit] bg-item-layer transition-all duration-300 group-hover:bottom-0"></div>
       </div>
       <div className="relative m-3 -mt-14 flex flex-col gap-4 rounded-xl border border-neutral-200 border-opacity-80 bg-white p-3">
         <Link href={`/blog/${slug}`} className="text-base font-semibold">

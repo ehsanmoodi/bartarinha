@@ -1,4 +1,7 @@
 /** @type {import('tailwindcss').Config} */
+
+const plugin = require('tailwindcss/plugin')
+
 module.exports = {
   content: [
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -22,10 +25,18 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        'post-item-layer':
+        'item-layer':
           'linear-gradient(180deg, rgba(39, 163, 203, 0) 0%, rgba(39, 163, 203, 0.8) 100%)',
+      },
+      boxShadow: {
+        'cat-item': '32px 32px 50px rgba(39, 163, 203, 0.14)',
+        'ad-item': '0px 34px 50px rgba(0, 0, 0, 0.07)',
       },
     },
   },
-  plugins: [],
+  plugins: [
+    plugin(function ({ addVariant }) {
+      addVariant('svg', '&>svg')
+    }),
+  ],
 }
