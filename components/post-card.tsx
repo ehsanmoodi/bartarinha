@@ -9,7 +9,7 @@ interface PostItemProps {
   slug: string
 }
 
-export function PostItem({ image, title, date, slug }: PostItemProps) {
+export function PostCard({ image, title, date, slug }: PostItemProps) {
   return (
     <article className="group rounded-2xl bg-[#F6F6F6]">
       <div className="relative h-52 w-full overflow-hidden rounded-t-2xl bg-black">

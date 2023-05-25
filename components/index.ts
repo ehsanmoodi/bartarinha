@@ -28,4 +28,6 @@ export * from './package-item'
 export * from './tehran-card'
 
 // Blog
+export * from './post-card'
+export * from './featured-post'
 export * from './hot-posts'

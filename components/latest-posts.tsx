@@ -1,5 +1,5 @@
 import { ButtonLink } from './button-link'
-import { PostItem } from './post-item'
+import { PostCard } from './post-card'
 import { Title } from './title'
 
 export function LatestPosts() {
@@ -11,25 +11,25 @@ export function LatestPosts() {
           <strong className="font-black"> مقالات</strong>
         </Title>
         <div className="flex w-full flex-col gap-7 md:grid md:grid-cols-2 lg:grid-cols-4">
-          <PostItem
+          <PostCard
             image="https://picsum.photos/200/300?random=1"
             title="عنوان مطلب در این قسمت قرار میگیرد"
             slug="first-blog-post"
             date="1402/02/28"
           />
-          <PostItem
+          <PostCard
             image="https://picsum.photos/200/300?random=2"
             title="عنوان مطلب در این قسمت قرار میگیرد"
             slug="second blog post"
             date="1402/02/28"
           />
-          <PostItem
+          <PostCard
             image="https://picsum.photos/200/300?random=3"
             title="عنوان مطلب در این قسمت قرار میگیرد"
             slug="third blog post"
             date="1402/02/28"
           />
-          <PostItem
+          <PostCard
             image="https://picsum.photos/200/300?random=4"
             title="عنوان مطلب در این قسمت قرار میگیرد"
             slug="fourth blog post"
