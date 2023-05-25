@@ -1,7 +1,14 @@
 export * from './header'
 export * from './footer'
 
+// forms
+export * from './input'
+export * from './checkbox'
+
 export * from './title'
+export * from './pagination'
+export * from './sidebar-card'
+export * from './category-filter'
 export * from './banner'
 
 export * from './ad-item'
