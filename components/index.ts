@@ -2,6 +2,7 @@ export * from './header'
 export * from './footer'
 
 export * from './title'
+export * from './banner'
 
 export * from './ad-item'
 
@@ -13,3 +14,6 @@ export * from './latest-posts'
 
 // Package page
 export * from './package-item'
+
+// Tehran
+export * from './tehran-card'

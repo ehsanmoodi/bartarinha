@@ -1,3 +1,4 @@
+import { ButtonLink } from './button-link'
 import { SpecItem } from './spec-item'
 import { Title } from './title'
 
@@ -15,6 +16,7 @@ export function IndexSpecials() {
           <SpecItem />
           <SpecItem />
         </div>
+        <ButtonLink color="transparent" href="#" label="مشاهده همه تخفیفات" />
       </div>
     </section>
   )
