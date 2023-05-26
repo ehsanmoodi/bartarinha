@@ -7,16 +7,22 @@ import { ArrowUp2, DocumentFilter } from 'iconsax-react'
 
 interface CategoryFiltersProps {
   children: ReactNode
+  title?: string
+  icon?: ReactNode
 }
 
-export function CategoryFilters({ children }: CategoryFiltersProps) {
+export function CategoryFilters({
+  children,
+  icon = <DocumentFilter size={24} className="text-secondary" />,
+  title = 'دسته بندی ها',
+}: CategoryFiltersProps) {
   const [open, setOpen] = useState<boolean>(true)
   return (
     <SidebarCard>
       <Collapsible.Root open={open} onOpenChange={setOpen}>
         <Collapsible.Trigger className="flex w-full items-center gap-2 text-base font-medium">
-          <DocumentFilter size={24} className="text-secondary" />
-          دسته بندی ها
+          {icon}
+          {title}
           <ArrowUp2
             size={16}
             className={`ms-auto text-secondary transition-all ${

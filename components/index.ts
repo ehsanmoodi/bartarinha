@@ -18,6 +18,9 @@ export * from './layared-image'
 
 // Ads
 export * from './ad-card'
+export * from './small-ad-card'
+export * from './keyword'
+export * from './sidebar-ad-card'
 
 // Home Components
 export * from './index-hero'
