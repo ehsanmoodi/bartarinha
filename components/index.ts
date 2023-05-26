@@ -22,6 +22,9 @@ export * from './small-ad-card'
 export * from './keyword'
 export * from './sidebar-ad-card'
 
+// vitrin
+export * from './vitrin-card'
+
 // Home Components
 export * from './index-hero'
 export * from './index-hero-search'

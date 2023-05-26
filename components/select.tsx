@@ -25,7 +25,6 @@ export function Select({ children, icon, classes, ...props }: SelectProps) {
         <RadinSelect.Content
           position="popper"
           align="center"
-          sideOffset={10}
           className="w-full overflow-hidden rounded-lg bg-white p-1 shadow-lg"
         >
           <RadinSelect.Viewport>{children}</RadinSelect.Viewport>

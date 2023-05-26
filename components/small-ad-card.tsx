@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { LayeredImage } from './layared-image'
-import { ArrowSquare, ArrowSquareLeft, Location } from 'iconsax-react'
+import { ArrowSquareLeft, Location } from 'iconsax-react'
 
 interface SmallAdCardProps {
   image: string
