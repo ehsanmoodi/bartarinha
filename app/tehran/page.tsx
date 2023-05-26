@@ -34,14 +34,45 @@ export default function Tehran() {
               image="https://picsum.photos/200/300?random=1"
               title="عنوان مطلب در این قسمت قرار می‌گیرد"
               excerpt="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان ... "
-              slug="1"
+              slug="tehran-1"
               date="۱۴۰۱/۱۲/۱۳"
             />
             <TehranCard
-              image="https://picsum.photos/200/300?random=1"
+              image="https://picsum.photos/200/300?random=2"
               title="عنوان مطلب در این قسمت قرار می‌گیرد"
               excerpt="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان ... "
-              slug="1"
+              slug="tehran-2"
+              date="۱۴۰۱/۱۲/۱۳"
+            />
+
+            <Banner
+              imageSrc="https://picsum.photos/350/500"
+              imageClasses="w-full h-44 lg:w-[350px]"
+              showPattern={false}
+            >
+              <h2 className="text-xl font-light lg:text-[22px]">
+                <strong className="font-black">عنوان تستی </strong>
+                بنر برترین ها
+              </h2>
+              <p className="text-base font-normal leading-7">
+                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ  و با
+                استفاده از طراحان گرافی
+              </p>
+            </Banner>
+
+            <TehranCard
+              image="https://picsum.photos/200/300?random=3"
+              title="عنوان مطلب در این قسمت قرار می‌گیرد"
+              excerpt="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان ... "
+              slug="tehran-3"
+              date="۱۴۰۱/۱۲/۱۳"
+            />
+
+            <TehranCard
+              image="https://picsum.photos/200/300?random=4"
+              title="عنوان مطلب در این قسمت قرار می‌گیرد"
+              excerpt="لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان ... "
+              slug="tehran-4"
               date="۱۴۰۱/۱۲/۱۳"
             />
 

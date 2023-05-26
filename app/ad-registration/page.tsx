@@ -1,6 +1,5 @@
-import { User } from 'iconsax-react'
-import { Input } from '@/components/input'
-import { Title } from '@/components/title'
+import { Call, Mobile, Note, User } from 'iconsax-react'
+import { Input, Title } from '@/components'
 
 export default function AdRegistration() {
   return (
@@ -13,6 +12,19 @@ export default function AdRegistration() {
           <Input
             placeholder="نام و نام‌خانوادگی"
             icon={<User color="#A9A9A9" size={20} />}
+          />
+          <Input
+            placeholder="تلفن ثابت"
+            type="number"
+            icon={<Call color="#A9A9A9" size={20} />}
+          />
+          <Input
+            placeholder="تلفن همراه"
+            icon={<Mobile color="#A9A9A9" size={20} />}
+          />
+          <Input
+            placeholder="عنوان آگهی"
+            icon={<Note color="#A9A9A9" size={20} />}
           />
         </div>
       </div>

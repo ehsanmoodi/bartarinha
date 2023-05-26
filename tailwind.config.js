@@ -29,6 +29,10 @@ module.exports = {
           'linear-gradient(180deg, rgba(39, 163, 203, 0) 0%, rgba(39, 163, 203, 0.8) 100%)',
         'featured-layer':
           'linear-gradient(179.54deg, rgba(36, 42, 50, 0) 27.98%, rgba(36, 42, 50, 0.82) 99.58%)',
+        'mobile-banner-layer':
+          'linear-gradient(180deg, rgba(39, 163, 203, 0) 0%, #27A3CB 100%)',
+        'desktop-banner-layer':
+          'linear-gradient(90deg, rgba(39, 163, 203, 0) 0%, #27A3CB 100%)',
       },
       boxShadow: {
         'cat-item': '32px 32px 50px rgba(39, 163, 203, 0.14)',
