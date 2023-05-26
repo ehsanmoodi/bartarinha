@@ -5,6 +5,7 @@ import {
   IndexSpecials,
   Banner,
   IndexHero,
+  TehranBanner,
 } from '@/components'
 import { ButtonLink } from '@/components/button-link'
 
@@ -38,6 +39,9 @@ export default function Home() {
           </Banner>
         </div>
         <IndexSpecials />
+        <div className="mx-auto w-full max-w-6xl px-4">
+          <TehranBanner />
+        </div>
         <LatestPosts />
       </div>
     </main>

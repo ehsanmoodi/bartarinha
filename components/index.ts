@@ -31,6 +31,7 @@ export * from './latest-posts'
 export * from './package-item'
 
 // Tehran
+export * from './tehran-banner'
 export * from './tehran-card'
 
 // Blog
