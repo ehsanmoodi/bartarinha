@@ -31,7 +31,7 @@ export default function Home() {
               ستون{' '}
             </p>
             <ButtonLink
-              href="#"
+              href="/ad-registration"
               label="شروع کنید"
               color="white"
               classes="px-10"

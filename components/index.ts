@@ -5,6 +5,8 @@ export * from './footer'
 export * from './input'
 export * from './checkbox'
 export * from './select'
+export * from './text-area'
+export * from './file-upload'
 
 export * from './title'
 export * from './button-link'

@@ -11,9 +11,9 @@ export function IndexHeroSearch() {
         <Select
           defaultValue=""
           classes="grow w-full"
+          placeholder="محدوده فعالیت"
           icon={<Location size={20} className="text-neutral-300" />}
         >
-          <SelectItem value="">محدوده فعالیت</SelectItem>
           <SelectItem value="1">انتخاب یک</SelectItem>
           <SelectItem value="2">انتخاب دو</SelectItem>
           <SelectItem value="3">انتخاب سه</SelectItem>
@@ -21,9 +21,9 @@ export function IndexHeroSearch() {
         <Select
           defaultValue=""
           classes="grow w-full"
+          placeholder="نوع فعالیت"
           icon={<FilterSearch size={20} className="text-neutral-300" />}
         >
-          <SelectItem value="">نوع فعالیت</SelectItem>
           <SelectItem value="1">انتخاب یک</SelectItem>
           <SelectItem value="2">انتخاب دو</SelectItem>
           <SelectItem value="3">انتخاب سه</SelectItem>

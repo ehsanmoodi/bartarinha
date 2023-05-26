@@ -1,5 +1,13 @@
-import { Call, Mobile, Note, User } from 'iconsax-react'
-import { Input, Title } from '@/components'
+import { Call, Location, Mobile, Note, User } from 'iconsax-react'
+import {
+  Input,
+  Title,
+  Select,
+  SelectItem,
+  Button,
+  TextArea,
+  FileUpload,
+} from '@/components'
 
 export default function AdRegistration() {
   return (
@@ -26,6 +34,38 @@ export default function AdRegistration() {
             placeholder="عنوان آگهی"
             icon={<Note color="#A9A9A9" size={20} />}
           />
+          <Select defaultValue="" placeholder="دسته بندی آگهی">
+            <SelectItem value="1">دسته یک</SelectItem>
+            <SelectItem value="2">دسته دو</SelectItem>
+            <SelectItem value="3">دسته سه</SelectItem>
+          </Select>
+          <Select defaultValue="" placeholder="گروه آگهی">
+            <SelectItem value="1">گروه یک</SelectItem>
+            <SelectItem value="2">گروه دو</SelectItem>
+            <SelectItem value="3">گروه سه</SelectItem>
+          </Select>
+          <Select defaultValue="" placeholder="محدوده کسب وکار">
+            <SelectItem value="1">محدوده یک</SelectItem>
+            <SelectItem value="2">محدوده دو</SelectItem>
+            <SelectItem value="3">محدوده سه</SelectItem>
+          </Select>
+          <div className="lg:col-span-2">
+            <Input
+              placeholder="آدرس دقیق کسب و کار"
+              icon={<Location color="#A9A9A9" size={20} />}
+            />
+          </div>
+          <TextArea placeholder="توضیحات " rows={4} />
+          <FileUpload label="آپلود مجوز کسب وکار" />
+          <FileUpload
+            label="آپلود تصویر آگهی"
+            guide="ابعاد عکس ۴۱۸ در ۲۵۲ باید باشد"
+          />
+          <div className="lg:col-start-3">
+            <Button color="primary" classes="w-full">
+              ارسال درخواست
+            </Button>
+          </div>
         </div>
       </div>
     </main>
