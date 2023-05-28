@@ -17,12 +17,14 @@ export * from './sidebar-card'
 export * from './category-filter'
 export * from './banner'
 export * from './layared-image'
+export * from './share-score'
 
 // Ads
 export * from './ad-card'
 export * from './small-ad-card'
 export * from './keyword'
 export * from './sidebar-ad-card'
+export * from './discount-card'
 
 // vitrin
 export * from './vitrin-card'

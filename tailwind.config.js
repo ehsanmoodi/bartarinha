@@ -17,6 +17,7 @@ module.exports = {
       secondary: '#303842',
       white: '#fff',
       black: '#000',
+      orange: '#F26F14',
       neutral: {
         100: '#F5F5F5',
         200: '#E5E5E5',
@@ -38,12 +39,65 @@ module.exports = {
         'cat-item': '32px 32px 50px rgba(39, 163, 203, 0.14)',
         'package-item': '42px 42px 50px rgba(39, 163, 203, 0.14)',
         item: '0px 34px 50px rgba(0, 0, 0, 0.07)',
+        header: '0px 32px 50px -10px rgba(0, 0, 0, 0.06)',
+        submenu: '0px 60px 50px -28px rgba(0, 0, 0, 0.06)',
+      },
+      keyframes: {
+        enterFromRight: {
+          from: { opacity: 0, transform: 'translateX(200px)' },
+          to: { opacity: 1, transform: 'translateX(0)' },
+        },
+        enterFromLeft: {
+          from: { opacity: 0, transform: 'translateX(-200px)' },
+          to: { opacity: 1, transform: 'translateX(0)' },
+        },
+        exitToRight: {
+          from: { opacity: 1, transform: 'translateX(0)' },
+          to: { opacity: 0, transform: 'translateX(200px)' },
+        },
+        exitToLeft: {
+          from: { opacity: 1, transform: 'translateX(0)' },
+          to: { opacity: 0, transform: 'translateX(-200px)' },
+        },
+        scaleIn: {
+          from: { opacity: 0, transform: 'rotateX(-10deg) scale(0.9)' },
+          to: { opacity: 1, transform: 'rotateX(0deg) scale(1)' },
+        },
+        scaleOut: {
+          from: { opacity: 1, transform: 'rotateX(0deg) scale(1)' },
+          to: { opacity: 0, transform: 'rotateX(-10deg) scale(0.95)' },
+        },
+        fadeIn: {
+          from: { opacity: 0 },
+          to: { opacity: 1 },
+        },
+        fadeOut: {
+          from: { opacity: 1 },
+          to: { opacity: 0 },
+        },
+      },
+      animation: {
+        scaleIn: 'scaleIn 200ms ease',
+        scaleOut: 'scaleOut 200ms ease',
+        fadeIn: 'fadeIn 200ms ease',
+        fadeOut: 'fadeOut 200ms ease',
+        enterFromLeft: 'enterFromLeft 250ms ease',
+        enterFromRight: 'enterFromRight 250ms ease',
+        exitToLeft: 'exitToLeft 250ms ease',
+        exitToRight: 'exitToRight 250ms ease',
       },
     },
   },
   plugins: [
     plugin(function ({ addVariant }) {
       addVariant('svg', '&>svg')
+    }),
+    plugin(({ matchUtilities }) => {
+      matchUtilities({
+        perspective: (value) => ({
+          perspective: value,
+        }),
+      })
     }),
   ],
 }

@@ -4,7 +4,7 @@ import { IndexHeroSearch } from './index-hero-search'
 
 export function IndexHero() {
   return (
-    <section className="overflow-hidden bg-[url('/images/index-hero/bg.png')] bg-contain bg-[center_top] bg-no-repeat pb-16 pt-8 lg:pb-32">
+    <section className="overflow-hidden bg-[url('/images/index-hero/bg.png')] bg-contain bg-[center_top] bg-no-repeat pb-16 pt-8 lg:pb-32 lg:pt-20">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-around px-4 lg:flex-row lg:items-stretch">
         <div className="order-2 flex grow flex-col items-center gap-3 text-center lg:order-1 lg:items-start lg:gap-6 lg:pb-12 lg:pt-8 lg:text-start">
           <h1 className="text-2xl font-black md:text-3xl lg:text-4xl">

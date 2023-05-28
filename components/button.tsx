@@ -3,7 +3,7 @@
 import { ReactNode } from 'react'
 
 interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  color: 'white' | 'primary' | 'transparent'
+  color: 'white' | 'primary' | 'transparent' | 'orange'
   children: ReactNode
   classes?: string
 }
@@ -30,6 +30,11 @@ export function Button({
       } ${
         color === 'primary'
           ? 'border border-primary bg-primary text-white hover:bg-white hover:text-primary ' +
+            classes
+          : ''
+      } ${
+        color === 'orange'
+          ? 'border border-orange bg-orange text-white hover:bg-opacity-[0.08] hover:text-orange ' +
             classes
           : ''
       }`}
