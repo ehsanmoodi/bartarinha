@@ -18,6 +18,7 @@ export * from './category-filter'
 export * from './banner'
 export * from './layared-image'
 export * from './share-score'
+export * from './slider'
 
 // Ads
 export * from './ad-card'

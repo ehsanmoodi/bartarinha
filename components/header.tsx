@@ -2,7 +2,6 @@
 
 import Image from 'next/image'
 import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 import logo from '../public/images/logo.png'
 import {
@@ -26,7 +25,6 @@ import { ReactNode, useEffect, useState } from 'react'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
 
 export function Header() {
-  const pathname = usePathname()
   const headerHeightThreshold = 100
   const [open, setOpen] = useState<boolean>(false)
   const [scrolled, setScrolled] = useState<boolean>(false)
@@ -70,7 +68,7 @@ export function Header() {
   return (
     <header
       className={`sticky top-0 z-30 mb-4 bg-white py-4  transition-all duration-300 lg:mb-8 lg:py-6 ${
-        scrolled ? 'shadow-header lg:!py-2' : ''
+        scrolled ? '!py-2 shadow-header' : ''
       }`}
     >
       <div className="mx-auto flex max-w-6xl items-center gap-8 px-4">
@@ -242,13 +240,21 @@ export function Header() {
             </NavigationMenu.Item>
 
             <NavigationMenu.Item>
+              <MenuLink href="/vitrin" label="ویترین" />
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <MenuLink href="/discounts" label="تخفیفات" />
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
+              <MenuLink href="/ad-registration" label="ثبت رایگان آگهی" />
+            </NavigationMenu.Item>
+
+            <NavigationMenu.Item>
               <MenuLink href="/about" label="درباره ما" />
             </NavigationMenu.Item>
           </NavigationMenu.List>
-
-          {/*<div className="absolute right-0 top-full flex w-full justify-start perspective-[2000px]">
-            <NavigationMenu.Viewport className="relative mt-[10px] h-[var(--radix-navigation-menu-viewport-height)] w-full origin-[top_center] overflow-hidden rounded-[14px] border border-neutral-200 border-opacity-60 bg-white shadow-submenu transition-[width,_height] duration-300 data-[state=closed]:animate-scaleOut data-[state=open]:animate-scaleIn sm:w-[var(--radix-navigation-menu-viewport-width)]" />
-          </div>*/}
 
           <div className="mx-auto flex shrink-0 gap-4 text-base font-medium lg:me-0 lg:ms-auto">
             <button className="flex h-12 w-12 items-center justify-center rounded-lg border border-neutral-200 border-opacity-60">

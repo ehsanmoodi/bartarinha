@@ -50,7 +50,7 @@ export default function AdsDetail() {
                 </span>
               </div>
               <div className="flex flex-wrap items-center justify-between gap-4 text-sm font-medium lg:text-base">
-                <sapn>شبکه های اجتماعی:</sapn>
+                <span>شبکه های اجتماعی:</span>
               </div>
             </div>
           </div>
