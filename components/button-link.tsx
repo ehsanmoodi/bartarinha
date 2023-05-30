@@ -3,7 +3,7 @@ import Link from 'next/link'
 interface ButtonLinkProps {
   href: string
   label: string
-  color: 'white' | 'primary' | 'transparent'
+  color: 'white' | 'primary' | 'transparent' | 'orange-transparent'
   classes?: string
 }
 
@@ -29,6 +29,11 @@ export function ButtonLink({
       } ${
         color === 'primary'
           ? 'border border-primary bg-primary text-white hover:bg-white hover:text-primary ' +
+            classes
+          : ''
+      } ${
+        color === 'orange-transparent'
+          ? 'border border-orange bg-transparent text-orange hover:bg-orange hover:text-white ' +
             classes
           : ''
       }`}
