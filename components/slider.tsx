@@ -8,12 +8,23 @@ interface SliderProps {
   children: ReactNode
   renderSmallActions?: boolean
   alignActions?: 'center' | 'start' | 'end'
+  spaceBetween?: number
+  slidesPerView?: number
+  breakpoints?: {
+    [key: number]: {
+      spaceBetween?: number
+      slidesPerView: number
+    }
+  }
 }
 
 export function Slider({
   children,
   renderSmallActions = false,
   alignActions = 'center',
+  spaceBetween = 50,
+  slidesPerView = 1,
+  breakpoints,
 }: SliderProps) {
   const nextEl = useRef(null)
   const prevEl = useRef(null)
@@ -57,8 +68,9 @@ export function Slider({
     <Swiper
       className="relative w-full"
       modules={[Navigation, Pagination]}
-      spaceBetween={50}
-      slidesPerView={1}
+      spaceBetween={spaceBetween}
+      slidesPerView={slidesPerView}
+      breakpoints={breakpoints}
       navigation={{
         nextEl: nextEl.current,
         prevEl: prevEl.current,

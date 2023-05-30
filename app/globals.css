@@ -12,6 +12,7 @@
 @import 'swiper/css';
 @import 'swiper/css/navigation';
 @import 'swiper/css/pagination';
+@import 'react-multi-date-picker/styles/layouts/mobile.css';
 
 .swiper-pagination-bullet {
   @apply h-[11px] w-[11px] rounded-full border border-primary bg-transparent opacity-100 transition-all duration-300;
@@ -19,4 +20,94 @@
 
 .swiper-pagination-bullet-active {
   @apply h-[14px] w-[14px] bg-primary;
+}
+
+.rmdp-container {
+  @apply w-full;
+
+  input {
+    @apply m-0 w-full border-0 p-0;
+    @apply text-sm font-medium leading-6 placeholder:text-neutral-300;
+  }
+
+  .rmdp-calendar-container-mobile {
+    z-index: 1000 !important;
+
+    .rmdp-wrapper {
+      z-index: 1200 !important;
+
+      .rmdp-top-class {
+        .rmdp-calendar {
+          .rmdp-header {
+            .rmdp-arrow-container {
+              .rmdp-arrow {
+                @apply border-primary;
+              }
+            }
+          }
+
+          .rmdp-day-picker {
+            .rmdp-week {
+              .rmdp-week-day {
+                @apply font-bold text-primary;
+              }
+
+              .rmdp-day.rmdp-selected {
+                .sd {
+                  @apply bg-primary;
+                  @apply shadow-sm shadow-primary;
+                }
+              }
+
+              .rmdp-day.rmdp-today {
+                .sd {
+                  @apply bg-[red] bg-opacity-60;
+                }
+              }
+
+              .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+                @apply bg-primary;
+              }
+            }
+          }
+
+          .rmdp-month-picker {
+            .rmdp-day.rmdp-today span {
+              @apply bg-primary bg-opacity-60;
+            }
+
+            .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+              @apply bg-primary;
+            }
+
+            .rmdp-day.rmdp-selected span:not(.highlight) {
+              @apply bg-primary;
+              @apply shadow-sm shadow-primary;
+            }
+          }
+
+          .rmdp-year-picker {
+            .rmdp-day.rmdp-today span {
+              @apply bg-primary bg-opacity-60;
+            }
+
+            .rmdp-day:not(.rmdp-disabled):not(.rmdp-day-hidden) span:hover {
+              @apply bg-primary;
+            }
+
+            .rmdp-day.rmdp-selected span:not(.highlight) {
+              @apply bg-primary;
+              @apply shadow-sm shadow-primary;
+            }
+          }
+        }
+      }
+
+      .rmdp-action-buttons {
+        .rmdp-button {
+          @apply text-primary;
+        }
+      }
+    }
+  }
 }

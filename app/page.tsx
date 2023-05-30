@@ -6,6 +6,7 @@ import {
   Banner,
   IndexHero,
   TehranBanner,
+  Title,
 } from '@/components'
 import { ButtonLink } from '@/components/button-link'
 
@@ -42,7 +43,18 @@ export default function Home() {
         <div className="mx-auto w-full max-w-6xl px-4">
           <TehranBanner />
         </div>
-        <LatestPosts />
+        <LatestPosts
+          title={
+            <Title>
+              جدیدترین
+              <strong className="font-black"> مقالات</strong>
+            </Title>
+          }
+          action={{
+            href: '/blog',
+            label: 'مشاهده همه مطالبت',
+          }}
+        />
       </div>
     </main>
   )

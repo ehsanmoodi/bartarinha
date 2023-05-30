@@ -7,6 +7,7 @@ export * from './checkbox'
 export * from './select'
 export * from './text-area'
 export * from './file-upload'
+export * from './star-rating'
 
 export * from './title'
 export * from './button-link'
@@ -19,6 +20,8 @@ export * from './banner'
 export * from './layared-image'
 export * from './share-score'
 export * from './slider'
+export * from './comment-form'
+export * from './reply'
 
 // Ads
 export * from './ad-card'
@@ -26,6 +29,11 @@ export * from './small-ad-card'
 export * from './keyword'
 export * from './sidebar-ad-card'
 export * from './discount-card'
+export * from './vitrin-slider'
+export * from './gallery-slider'
+export * from './ads-tabs'
+export * from './question'
+export * from './reserve'
 
 // vitrin
 export * from './vitrin-card'

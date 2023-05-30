@@ -1,15 +1,16 @@
 import Link from 'next/link'
 import { LayeredImage } from './layared-image'
-import { Location, Star1 } from 'iconsax-react'
+import { Location, Star1, WalletMoney } from 'iconsax-react'
 
 interface VitrinCardProps {
   image: string
   title: string
   score: string
-  location: string
+  location?: string
   price: string
   discountedPrice?: string
   slug: string
+  showPriceTag?: boolean
 }
 
 export function VitrinCard({
@@ -20,6 +21,7 @@ export function VitrinCard({
   price,
   discountedPrice,
   slug,
+  showPriceTag = false,
 }: VitrinCardProps) {
   return (
     <article className="group flex flex-col gap-3 rounded-[10px] border border-neutral-200 p-3 transition-all hover:shadow-item lg:flex-row lg:gap-4 lg:p-4">
@@ -48,10 +50,17 @@ export function VitrinCard({
           </span>
         </div>
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <span className="flex items-center gap-1 text-base font-medium">
-            <Location size={24} className="text-secondary" />
-            {location}
-          </span>
+          {showPriceTag ? (
+            <span className="flex items-center gap-1 text-base font-medium">
+              <WalletMoney size={24} className="text-secondary" />
+              قیمت:
+            </span>
+          ) : (
+            <span className="flex items-center gap-1 text-base font-medium">
+              <Location size={24} className="text-secondary" />
+              {location}
+            </span>
+          )}
           <span className="flex items-center gap-1 text-lg">
             {discountedPrice && (
               <span className="font-medium line-through	opacity-70">

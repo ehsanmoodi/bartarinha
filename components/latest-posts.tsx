@@ -1,15 +1,20 @@
+import { ReactNode } from 'react'
 import { ButtonLink } from './button-link'
 import { PostCard } from './post-card'
-import { Title } from './title'
 
-export function LatestPosts() {
+interface LatestPostsProps {
+  title: ReactNode
+  action?: {
+    label: string
+    href: string
+  }
+}
+
+export function LatestPosts({ title, action }: LatestPostsProps) {
   return (
     <section>
       <div className="mx-auto flex max-w-6xl flex-col items-center gap-6 px-4 lg:gap-10">
-        <Title>
-          جدیدترین
-          <strong className="font-black"> مقالات</strong>
-        </Title>
+        {title}
         <div className="flex w-full flex-col gap-7 md:grid md:grid-cols-2 lg:grid-cols-4">
           <PostCard
             image="https://picsum.photos/200/300?random=1"
@@ -36,7 +41,13 @@ export function LatestPosts() {
             date="1402/02/28"
           />
         </div>
-        <ButtonLink href="/blog" color="transparent" label="مشاهده همه مطالب" />
+        {action && (
+          <ButtonLink
+            href={action.href}
+            color="transparent"
+            label={action.label}
+          />
+        )}
       </div>
     </section>
   )
