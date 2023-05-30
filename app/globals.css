@@ -111,3 +111,17 @@
     }
   }
 }
+
+.content {
+  @apply text-base font-light leading-7;
+}
+
+.content h1 {
+  @apply text-xl font-extrabold leading-10;
+  @apply my-2;
+}
+
+.content h2 {
+  @apply text-lg font-extrabold leading-10;
+  @apply my-2;
+}

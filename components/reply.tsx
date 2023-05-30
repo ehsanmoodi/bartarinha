@@ -5,11 +5,20 @@ import { StarRating } from './star-rating'
 interface ReplyProps {
   showReplyBtn?: boolean
   score: 1 | 2 | 3 | 4 | 5
+  indent?: boolean
 }
 
-export function Reply({ showReplyBtn = true, score }: ReplyProps) {
+export function Reply({
+  showReplyBtn = true,
+  score,
+  indent = false,
+}: ReplyProps) {
   return (
-    <div className="flex flex-col gap-4 rounded-[14px] border-neutral-200 border-opacity-60 bg-[#F9F9F9] p-4 lg:p-5">
+    <div
+      className={`flex flex-col gap-4 rounded-[14px] border-neutral-200 border-opacity-60 bg-[#F9F9F9] p-4 lg:p-5 ${
+        indent ? 'ms-10 lg:ms-20' : ''
+      }`}
+    >
       <div className="flex flex-wrap items-center justify-between gap-4">
         <div className="flex items-center gap-2">
           <div className="h-10 w-10 rounded-full border-[3px] border-white lg:h-12 lg:w-12">
