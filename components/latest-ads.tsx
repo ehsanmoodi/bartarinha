@@ -15,7 +15,7 @@ export function LatestAds() {
           <strong className="font-black"> آگهی‌ها</strong>
         </Title>
         <Slider>
-          <SwiperSlide className="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
+          <SwiperSlide className="relative flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
             <AdCard
               image="https://picsum.photos/200/300?random=1"
               title="عنوان تستی آگهی تا دو خط در این قسمت قرار میگیرد"
@@ -61,7 +61,7 @@ export function LatestAds() {
               slug="ad-6"
             />
           </SwiperSlide>
-          <SwiperSlide className="flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
+          <SwiperSlide className="relative flex flex-col gap-8 md:grid md:grid-cols-2 lg:grid-cols-3">
             <AdCard
               image="https://picsum.photos/200/300?random=1"
               title="عنوان تستی آگهی تا دو خط در این قسمت قرار میگیرد"
