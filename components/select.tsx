@@ -32,7 +32,7 @@ export function Select({
         <RadinSelect.Content
           position="popper"
           align="center"
-          className="w-full overflow-hidden rounded-lg bg-white p-1 shadow-lg"
+          className="z-[60] w-full overflow-hidden rounded-lg bg-white p-1 shadow-lg"
         >
           <RadinSelect.Viewport>
             <SelectItem value="">{placeholder}</SelectItem>
