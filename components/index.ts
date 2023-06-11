@@ -9,6 +9,7 @@ export * from './text-area'
 export * from './file-upload'
 export * from './star-rating'
 
+// Common
 export * from './title'
 export * from './button-link'
 export * from './button'
@@ -22,6 +23,7 @@ export * from './share-score'
 export * from './slider'
 export * from './comment-form'
 export * from './reply'
+export * from './auth'
 
 // Ads
 export * from './ad-card'

@@ -7,14 +7,15 @@ import { useId, useState } from 'react'
 interface CheckboxProps {
   name: string
   label: string
+  classes?: string
 }
 
-export function Checkbox({ name, label }: CheckboxProps) {
+export function Checkbox({ name, label, classes = '' }: CheckboxProps) {
   const id = useId()
   const [checked, setChecked] = useState(false)
 
   return (
-    <div className="flex items-center justify-between gap-2">
+    <div className={`flex items-center justify-between gap-2 ${classes}`}>
       <label
         className={`text-sm font-normal ${checked ? 'text-primary' : ''}`}
         htmlFor={id}

@@ -23,6 +23,7 @@ import {
 } from 'iconsax-react'
 import { ReactNode, useEffect, useState } from 'react'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
+import { Auth } from './auth'
 
 export function Header() {
   const headerHeightThreshold = 100
@@ -260,10 +261,7 @@ export function Header() {
             <button className="flex h-12 w-12 items-center justify-center rounded-lg border border-neutral-200 border-opacity-60">
               <SearchNormal size={22} className="text-secondary" />
             </button>
-            <button className="flex h-12 items-center justify-center gap-1 rounded-lg border border-neutral-200 border-opacity-60 px-3">
-              <User size={22} className="text-secondary" />
-              حساب کاربری
-            </button>
+            <Auth />
           </div>
 
           <button
