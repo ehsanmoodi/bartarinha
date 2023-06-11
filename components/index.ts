@@ -23,7 +23,8 @@ export * from './share-score'
 export * from './slider'
 export * from './comment-form'
 export * from './reply'
-export * from './auth'
+export * from './auth-modal'
+export * from './search-modal'
 
 // Ads
 export * from './ad-card'

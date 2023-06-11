@@ -14,16 +14,15 @@ import {
   Notepad2,
   Reserve,
   Scissor,
-  SearchNormal,
   Setting2,
   Teacher,
   Truck,
-  User,
   Weight,
 } from 'iconsax-react'
 import { ReactNode, useEffect, useState } from 'react'
 import * as NavigationMenu from '@radix-ui/react-navigation-menu'
-import { Auth } from './auth'
+import { AuthModal } from './auth-modal'
+import { SearchModal } from './search-modal'
 
 export function Header() {
   const headerHeightThreshold = 100
@@ -258,10 +257,8 @@ export function Header() {
           </NavigationMenu.List>
 
           <div className="mx-auto flex shrink-0 gap-4 text-base font-medium lg:me-0 lg:ms-auto">
-            <button className="flex h-12 w-12 items-center justify-center rounded-lg border border-neutral-200 border-opacity-60">
-              <SearchNormal size={22} className="text-secondary" />
-            </button>
-            <Auth />
+            <SearchModal />
+            <AuthModal />
           </div>
 
           <button

@@ -8,7 +8,7 @@ import { Button } from './button'
 import { useState } from 'react'
 import Link from 'next/link'
 
-export function Auth() {
+export function AuthModal() {
   const [privacyChecked, setPrivacyChecked] = useState(false)
   const [passwordStep, setPasswordStep] = useState(false)
   const [resetPasswordStep, setResetPasswordStep] = useState(false)
